@@ -9,7 +9,7 @@ import random as r
 
 def createPoints():
     while True:
-        p1, p2, p3 = (r.randint(-50, 50), r.randint(-50, 50)), (r.randint(-50, 50), r.randint(-50, 50)), (r.randint(-50, 50), r.randint(-50, 50))
+        p1, p2, p3 = (r.randint(-10, 10), r.randint(-10, 10)), (r.randint(-10, 10), r.randint(-10, 10)), (r.randint(-10, 10), r.randint(-10, 10))
         if p1 == p2 or p2 == p3 or p1 == p3:
             pass
         elif p1[0] == p2[0] and p2[0] == p3[0]:
@@ -29,29 +29,21 @@ def createCircle(r, center):
     angle = np.linspace(0, 2*np.pi, segments+1)
     x = r * np.cos(angle) + centerX
     y = r * np.sin(angle) + centerY
-
-    plt.plot(x, y, color='green', markersize=1)
-    plt.plot(x, y, "bo")
-
-    plt.title("Circles")
-    plt.xlabel("X")
-    plt.ylabel("Y")
-    plt.gca().set_aspect("equal")
-    plt.grid()
-    plt.show()
+    return x, y
 
 def middlePoint(p1, p2):
     return ((p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2)
 
+def euclideanNorm(p1, p2):
+    return ((p1[0] - p2[0])**2 + (p1[1] - p2[1])**2)**0.5
+
 def line(p1, p2):
     m = (p2[1]-p1[1])/(p2[0]-p1[0])
-    x = np.linspace(-100, 100, 100)
     b = p1[1]-(m*p1[0])
     return m*x+b
 
 def mediatriz(p1, p2):
     m = -(1/((p2[1]-p1[1])/(p2[0]-p1[0])))
-    x = np.linspace(-100, 100, 100)
     point = middlePoint(p1, p2)
     b = point[1]-(m*point[0])
     return m*x+b
@@ -65,5 +57,23 @@ def center(p1, p2, p3):
     b2 = point2[1]-(m2*point2[0])
     return ((b1-b2)/(m2-m1), m1*((b1-b2)/(m2-m1))+b1)
 
+if __name__ == "__main__":
+    points = createPoints()
+    p1, p2, p3 = points[0], points[1], points[2]
+    x = np.linspace(-10, 10, 10)
+    line1, line2, line3 = line(p1, p2), line(p2, p3), line(p1, p3)
+    circuncenter = center(p1, p2, p3)
+    circle = createCircle(euclideanNorm(p1, circuncenter), circuncenter)
+    xCircle, yCircle = circle[0], circle[1]
 
-x = np.linspace(-100, 100, 100)
+    fig, ax = plt.subplots(figsize=(20,20))
+    ax.plot(x, line1, color="blue")
+    ax.plot(x, line2, color="red")
+    ax.plot(x, line3, color="green")
+    ax.plot(xCircle, yCircle, color="black")
+    ax.set_xlabel("x")
+    ax.set_ylabel("y")
+    ax.set_title("Circumscribed Circle")
+    fig.set_facecolor("lightsteelblue")
+    plt.grid()
+    plt.show()
