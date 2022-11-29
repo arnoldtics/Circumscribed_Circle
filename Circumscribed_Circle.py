@@ -20,5 +20,22 @@ def createPoints():
             break
     return p1, p2, p3
 
-points = createPoints()
-print(points)
+def createCircle(r, center):
+    segments = 50
+    centerX = center[0]
+    centerY = center[1]
+    angle = np.linspace(0, 2*np.pi, segments+1)
+    x = r * np.cos(angle) + centerX
+    y = r * np.sin(angle) + centerY
+
+    plt.plot(x, y, color='green', markersize=1)
+    plt.plot(x, y, "bo")
+
+    plt.title("Circles")
+    plt.xlabel("X")
+    plt.ylabel("Y")
+    plt.gca().set_aspect("equal")
+    plt.grid()
+    plt.show()
+
+createCircle(5, [0,0])
