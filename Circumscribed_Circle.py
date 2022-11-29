@@ -38,4 +38,5 @@ def createCircle(r, center):
     plt.grid()
     plt.show()
 
-createCircle(5, [0,0])
+def middlePoint(p1, p2):
+    return ((p1[0] + p2[0]) / 2, (p1[1] + p2[1]) / 2)
