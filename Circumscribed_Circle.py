@@ -16,6 +16,8 @@ def createPoints():
             pass
         elif p1[1] == p2[1] and p2[1] == p3[1]:
             pass
+        elif (p2[1]-p1[1])/(p2[0]-p1[0]) == (p3[1]-p2[1])/(p3[0]-p2[0]):
+            pass
         else:
             break
     return p1, p2, p3
@@ -43,23 +45,25 @@ def middlePoint(p1, p2):
 
 def line(p1, p2):
     m = (p2[1]-p1[1])/(p2[0]-p1[0])
-    x = np.arange(-100, 100+0.1, 0.1)
-    return m*(x-p1[0])+p1[1]
+    x = np.linspace(-100, 100, 100)
+    b = p1[1]-(m*p1[0])
+    return m*x+b
 
 def mediatriz(p1, p2):
-    m = (p2[1]-p1[1])/(p2[0]-p1[0])
-    m = -(1/m)
-    x = np.arange(-100, 100+0.1, 0.1)
+    m = -(1/((p2[1]-p1[1])/(p2[0]-p1[0])))
+    x = np.linspace(-100, 100, 100)
     point = middlePoint(p1, p2)
-    return m*(x-point[0])+point[1]
+    b = point[1]-(m*point[0])
+    return m*x+b
 
-def center(med1, med2, med3):
-    for i in range(len(med1)):
-        if med1[i] == med2[i]:
-            if med3[i] == med2[i]:
-                y = med1[i]
-                x = i
-                break
-        else:
-            print("Error")
-    return [x, y]
+def center(p1, p2, p3):
+    point1 = middlePoint(p1, p2)
+    point2 = middlePoint(p2, p3)
+    m1 = -(1/((p2[1]-p1[1])/(p2[0]-p1[0])))
+    m2 = -(1/((p3[1]-p2[1])/(p3[0]-p2[0])))
+    b1 = point1[1]-(m1*point1[0])
+    b2 = point2[1]-(m2*point2[0])
+    return ((b1-b2)/(m2-m1), m1*((b1-b2)/(m2-m1))+b1)
+
+
+x = np.linspace(-100, 100, 100)
