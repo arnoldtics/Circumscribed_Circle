@@ -52,3 +52,14 @@ def mediatriz(p1, p2):
     x = np.arange(-100, 100+0.1, 0.1)
     point = middlePoint(p1, p2)
     return m*(x-point[0])+point[1]
+
+def center(med1, med2, med3):
+    for i in range(len(med1)):
+        if med1[i] == med2[i]:
+            if med3[i] == med2[i]:
+                y = med1[i]
+                x = i
+                break
+        else:
+            print("Error")
+    return [x, y]
