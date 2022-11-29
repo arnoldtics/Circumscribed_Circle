@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #Author: Arnoldo Fernando Chue Sánchez
-#Contact: 
+#Contact: arnoldwork20@gmail.com
 #License: GNU/GPL 
 
 import numpy as np
