@@ -44,5 +44,11 @@ def middlePoint(p1, p2):
 def line(p1, p2):
     m = (p2[1]-p1[1])/(p2[0]-p1[0])
     x = np.arange(-100, 100+0.1, 0.1)
-    return m*(x-p1[0])+p1[0]
+    return m*(x-p1[0])+p1[1]
 
+def mediatriz(p1, p2):
+    m = (p2[1]-p1[1])/(p2[0]-p1[0])
+    m = -(1/m)
+    x = np.arange(-100, 100+0.1, 0.1)
+    point = middlePoint(p1, p2)
+    return m*(x-point[0])+point[1]
