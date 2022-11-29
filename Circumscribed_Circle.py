@@ -9,7 +9,7 @@ import random as r
 
 def createPoints():
     while True:
-        p1, p2, p3 = (r.randint(-10, 10), r.randint(-10, 10)), (r.randint(-10, 10), r.randint(-10, 10)), (r.randint(-10, 10), r.randint(-10, 10))
+        p1, p2, p3 = (r.randint(-100, 100), r.randint(-100, 100)), (r.randint(-100, 100), r.randint(-100, 100)), (r.randint(-100, 100), r.randint(-100, 100))
         if p1 == p2 or p2 == p3 or p1 == p3:
             pass
         elif p1[0] == p2[0] and p2[0] == p3[0]:
@@ -60,7 +60,7 @@ def center(p1, p2, p3):
 if __name__ == "__main__":
     points = createPoints()
     p1, p2, p3 = points[0], points[1], points[2]
-    x = np.linspace(-10, 10, 10)
+    x = np.linspace(-100, 100, 100)
     line1, line2, line3 = line(p1, p2), line(p2, p3), line(p1, p3)
     circuncenter = center(p1, p2, p3)
     circle = createCircle(euclideanNorm(p1, circuncenter), circuncenter)
