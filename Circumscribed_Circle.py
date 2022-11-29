@@ -23,7 +23,7 @@ def createPoints():
     return p1, p2, p3
 
 def createCircle(r, center):
-    segments = 50
+    segments = 1000
     centerX = center[0]
     centerY = center[1]
     angle = np.linspace(0, 2*np.pi, segments+1)
