@@ -34,7 +34,68 @@ Using these concepts and all the lessons in analytic geometry it is possible to 
 ## Implementation
 
 ## Tests and results
+All the tests provided by the functions in the project run correctly. The random coordinate points were valided correctly. In some cases, the only problem was the scale: sometimes the points ploted very long triangles. In consequence, the circle is too big for the screen. So, the circles of some of the images look like ellipses.
+
+Some of these test/results are the following:
 ![alt text](img/Figure_1.png)
+*Test 1. Points: (-66, -56)  (16, -68)  (56, 26)*
+
+![alt text](img/Figure_2.png)
+*Test 2. Points: (-17, 22)  (-40, -89)  (74, -59)*
+
+![alt text](img/Figure_3.png)
+*Test 3. Points: (37, -93)  (-57, 5)  (-82, -5)*
+
+![alt text](img/Figure_4.png)
+*Test 4. Points: (-39, -63)  (-77, -6)  (29, -17)*
+
+![alt text](img/Figure_5.png)
+*Test 5. Points: (-40, -49)  (5, 53)  (91, 50)*
+
+![alt text](img/Figure_6.png)
+*Test 6. Points: (-98, 100)  (-69, -67)  (-4, 12)*
+
+![alt text](img/Figure_7.png)
+*Test 7. Points: (-54, 47)  (62, -65)  (70, -28)*
+
+![alt text](img/Figure_8.png)
+*Test 8. Points: (87, 81)  (47, 91)  (23, 90)*
+
+![alt text](img/Figure_9.png)
+*Test 9. Points: (-98, -90)  (-41, 96)  (75, -22)*
+
+![alt text](img/Figure_10.png)
+*Test 10. Points: (4, 39)  (2, 9)  (-87, 60)*
+
+![alt text](img/Figure_11.png)
+*Test 11. Points: (-40, 5)  (-2, 75)  (31, 39)*
+
+![alt text](img/Figure_12.png)
+*Test 12. Points: (-56, 60)  (12, 78)  (83, 45)*
+
+![alt text](img/Figure_13.png)
+*Test 13. Points: (-89, 81)  (66, -25)  (72, 68)*
+
+![alt text](img/Figure_14.png)
+*Test 14. Points: (13, 85)  (37, -70)  (53, 52)*
+
+![alt text](img/Figure_15.png)
+*Test 15. Points: (-77, 51)  (20, 11)  (37, 9)*
+
+![alt text](img/Figure_16.png)
+*Test 16. Points: (-63, -38)  (14, -63)  (60, 94)*
+
+![alt text](img/Figure_17.png)
+*Test 17. Points: (0, 43)  (27, 66)  (86, -27)*
+
+![alt text](img/Figure_18.png)
+*Test 18. Points: (-14, -23)  (13, -54)  (17, -51)*
+
+![alt text](img/Figure_19.png)
+*Test 19. Points: (77, -12)  (80, -2)  (72, -38)*
+
+![alt text](img/Figure_20.png)
+*Test 20. Points: (-77, 48)  (-60, -70)  (51, 61)*
 
 ## Conclusions
 Working with random coordinate points can be hard beacause it is imposible to set a good scale for the render of all the executions. Nevertheless, the final result was a success. The render is fast and the curves are smooth enough. The margin of rendering error is close to 0.00001 between the points and the circle.
