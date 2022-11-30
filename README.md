@@ -41,6 +41,12 @@ The description of each step is:
 6. Create a circle with radius of the calculated distance (step 5) and center at the circumcenter.
 
 ## Implementation
+In this section it is shown how do all the functions work. The order is the same as the order of the metodology section.
+
+First of all, Python 3.10.7 was used for the whole program. The modules imported from this Python version were random, numpy and matplolib.
+
+1. *createPoints* is the function that solves this step. It creates 3 random coordinate points (every point with integer numbers between -100 and 100) and validates them. When the points are valid, it returns the point in a list. The validation is done comparing the values of each coordinate point and their slopes.
+2. *line* is the function that solves this step. It has two points as parameters. It is very similar than the functions used in class, but this one uses *b* (which is calculated with a simple equation based on the straight line equation) and *x* (global variable) which is built with numpy method *linspace* instead of *array*. In this case it is better to use *linspace* because the return of this function is more similar to the mathematical straight line equation.
 
 ## Tests and results
 All the tests provided by the functions in the project run correctly. The random coordinate points were valided correctly. In some cases, the only problem was the scale: sometimes the points ploted very long triangles. In consequence, the circle is too big for the screen. So, the circles of some of the images look like ellipses.
