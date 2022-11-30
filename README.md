@@ -34,6 +34,7 @@ Using these concepts and all the lessons in analytic geometry it is possible to 
 ## Implementation
 
 ## Tests and results
+![alt text](img/Figure_1.png)
 
 ## Conclusions
 Working with random coordinate points can be hard beacause it is imposible to set a good scale for the render of all the executions. Nevertheless, the final result was a success. The render is fast and the curves are smooth enough. The margin of rendering error is close to 0.00001 between the points and the circle.
