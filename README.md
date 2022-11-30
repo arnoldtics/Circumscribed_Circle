@@ -30,6 +30,15 @@ Using these concepts and all the lessons in analytic geometry it is possible to 
 - Plot the lines and circle in a good resolution and minimizing the margin of rendering error.
 
 ## Metodology
+In this section, there will be a brief description of the algorithm used to construct the whole program. The details about how do the functions work is explained in the implementation section.
+
+The description of each step is:
+1. Create three random coordinate points. Before starting step 2, it is important to valided if the points are suceptible of ploted a triangle.
+2. Create three lines with the coordinate points. Basically, it is about calculating the straight line equation for each line.
+3. Calculate the midpoint for each line of the triangle. With the midpoints and the slopes of the sides, it is simple to calculate the equation of the perpendicular bisectors.
+4. Find the intersection of the perpendicular bisectors. This is the circumcenter for the circumscribed circle.
+5. Calculate the distance between the circumcenter and the corners of the triangle.
+6. Create a circle with radius of the calculated distance (step 5) and center at the circumcenter.
 
 ## Implementation
 
