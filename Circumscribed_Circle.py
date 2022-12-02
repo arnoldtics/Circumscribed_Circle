@@ -60,13 +60,14 @@ def center(p1, p2, p3):
 if __name__ == "__main__":
     points = createPoints()
     p1, p2, p3 = points[0], points[1], points[2]
-    x = np.linspace(-100, 100, 100)
+    x = np.linspace(-200, 200, 200)
     line1, line2, line3 = line(p1, p2), line(p2, p3), line(p1, p3)
     circuncenter = center(p1, p2, p3)
     circle = createCircle(euclideanNorm(p1, circuncenter), circuncenter)
     xCircle, yCircle = circle[0], circle[1]
 
     fig, ax = plt.subplots(figsize=(20,20))
+    ax.axis([-200, 200, -200, 200])
     ax.plot(x, line1, color="blue")
     ax.plot(x, line2, color="red")
     ax.plot(x, line3, color="green")
@@ -74,7 +75,7 @@ if __name__ == "__main__":
     ax.set_xlabel("x")
     ax.set_ylabel("y")
     ax.set_title("Circumscribed Circle")
-    fig.set_facecolor("lightsteelblue")
+    fig.set_facecolor("lightgreen")
     plt.grid()
     plt.show()
     
