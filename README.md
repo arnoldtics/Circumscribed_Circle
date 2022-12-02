@@ -59,64 +59,64 @@ All the tests provided by the functions in the project run correctly. The random
 
 Some of these test/results are the following:
 ![alt text](img/Figure_1.png)
-*Test 1. Points: (-66, -56)  (16, -68)  (56, 26)*
+*Test 1. Points: (5, -5)  (53, -34)  (-74, 7)*
 
 ![alt text](img/Figure_2.png)
-*Test 2. Points: (-17, 22)  (-40, -89)  (74, -59)*
+*Test 2. Points: (-95, 99)  (-60, -56)  (-10, -28)*
 
 ![alt text](img/Figure_3.png)
-*Test 3. Points: (37, -93)  (-57, 5)  (-82, -5)*
+*Test 3. Points: (-67, 40)  (-45, -71)  (5, 95)*
 
 ![alt text](img/Figure_4.png)
-*Test 4. Points: (-39, -63)  (-77, -6)  (29, -17)*
+*Test 4. Points: (-63, 93)  (-26, 50)  (88, 24)*
 
 ![alt text](img/Figure_5.png)
-*Test 5. Points: (-40, -49)  (5, 53)  (91, 50)*
+*Test 5. Points: (-57,-43)  (-35, -91)  (90, -42)*
 
 ![alt text](img/Figure_6.png)
-*Test 6. Points: (-98, 100)  (-69, -67)  (-4, 12)*
+*Test 6. Points: (-81, -23)  (-13, 17)  (2, 21)*
 
 ![alt text](img/Figure_7.png)
-*Test 7. Points: (-54, 47)  (62, -65)  (70, -28)*
+*Test 7. Points: (-54, 96)  (-58, -75)  (-35, -29)*
 
 ![alt text](img/Figure_8.png)
-*Test 8. Points: (87, 81)  (47, 91)  (23, 90)*
+*Test 8. Points: (-63, -51)  (58, -79)  (89, -59)*
 
 ![alt text](img/Figure_9.png)
-*Test 9. Points: (-98, -90)  (-41, 96)  (75, -22)*
+*Test 9. Points: (21, -38)  (35, -7)  (70, 7)*
 
 ![alt text](img/Figure_10.png)
-*Test 10. Points: (4, 39)  (2, 9)  (-87, 60)*
+*Test 10. Points: (-88, -81)  (-24, -43)  (9, -57)*
 
 ![alt text](img/Figure_11.png)
-*Test 11. Points: (-40, 5)  (-2, 75)  (31, 39)*
+*Test 11. Points: (-85, -6)  (22, -83)  (44, 95)*
 
 ![alt text](img/Figure_12.png)
-*Test 12. Points: (-56, 60)  (12, 78)  (83, 45)*
+*Test 12. Points: (48, -84)  (87, -66)  (96, 48)*
 
 ![alt text](img/Figure_13.png)
-*Test 13. Points: (-89, 81)  (66, -25)  (72, 68)*
+*Test 13. Points: (-56, 13)  (-58, -29)  (40, -83)*
 
 ![alt text](img/Figure_14.png)
-*Test 14. Points: (13, 85)  (37, -70)  (53, 52)*
+*Test 14. Points: (-43, 82)  (-17, 52)  (53,30)*
 
 ![alt text](img/Figure_15.png)
-*Test 15. Points: (-77, 51)  (20, 11)  (37, 9)*
+*Test 15. Points: (-1, -33)  (22, 23)  (44, -18)*
 
 ![alt text](img/Figure_16.png)
-*Test 16. Points: (-63, -38)  (14, -63)  (60, 94)*
+*Test 16. Points: (-79, -3)  (-33, -39)  (4, -36)*
 
 ![alt text](img/Figure_17.png)
-*Test 17. Points: (0, 43)  (27, 66)  (86, -27)*
+*Test 17. Points: (-19, -29)  (0, -4)  (28, 70)*
 
 ![alt text](img/Figure_18.png)
-*Test 18. Points: (-14, -23)  (13, -54)  (17, -51)*
+*Test 18. Points: (-41, 47)  (17, -87)  (22, 11)*
 
 ![alt text](img/Figure_19.png)
-*Test 19. Points: (77, -12)  (80, -2)  (72, -38)*
+*Test 19. Points: (-92, -83)  (-36, -1)  (70, 74)*
 
 ![alt text](img/Figure_20.png)
-*Test 20. Points: (-77, 48)  (-60, -70)  (51, 61)*
+*Test 20. Points: (-64, -55)  (-18, 58)  (44, -82)*
 
 ## Conclusions
 Working with random coordinate points can be hard beacause it is imposible to set a good scale for the render of all the executions. Nevertheless, the final result was a success. The render is fast and the curves are smooth enough. The margin of rendering error is close to 0.00001 between the points and the circle.
