@@ -49,6 +49,40 @@ First of all, each point will be described as (x, y). So, after having the three
 
 Where m is the slope of the line, b is the value of x when y is equals to 0, and the third equation is the way to calculate the straight line equation.
 
+After that, it is necessary to work on the perpendicular bisectors (in order to calculate the coordinate points of the circumcenter). Then, the first equation is the one that calculates the perpendicular slope of the bisector having the slope of that side of the triangle.
+
+![alt text](Equations/6.png)
+
+This is the condition that determines if a line is perpendicular to other line. The program needs to calculate the slope of two of three perpendicular bisectors of the triangle. For doing that, it needs the three corners of the triangle.
+
+After that, the following equation for the perpendicular bisectors is the one that calculates the value of b.
+
+![alt text](Equations/5.png)
+
+It is important to consider that in this case the values of x and y are not the coordinate points of the corners of the triangle. Instead, the values of x and y are the coordinates of the midpoint of one of the three sides of the triangle. The coordinates x and y of the midpoint are calculated by the following equations:
+
+![alt text](Equations/4.png)
+
+So, having the values of b and the values of the slopes of two perpendicular bisectors, it is possible to calculate the coordinates of the circumcenter without calculating the equations of the perpendicular bisectors. The equations are the following:
+
+![alt text](Equations/7.png)
+
+Where h is the equivalent of x and k is the equivalent of y for the coordinates of the circumcenter.
+
+Finally, it is necessary to calculate the value of the radius of the circumscribed circle. Using the Euclidean norm it is possible to calculate the value of the radius of the circumscribed circle.
+
+![alt text](Equations/1.png)
+
+The two points used in this equation are the circumcenter and one of the corners of the triangle.
+
+Then, using the circle equation it is possible to calculate the circumscribed circle.
+
+![alt text](Equations/8.png)
+
+Where r is the radius of the circumscribed circle and h and k are the coordinates of the circumcenter.
+
+These are all the equations used in the functions that will be described in the next section.
+
 ## Implementation
 In this section it is shown how do all the functions work. The order is the same as the order of the metodology section.
 
