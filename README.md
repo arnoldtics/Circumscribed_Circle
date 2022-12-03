@@ -44,7 +44,9 @@ The description of each step is:
 Before the implementation, it is necessary to mention which equations are used in each step of the algorithm.
 
 First of all, each point will be described as (x, y). So, after having the three valid points, it is necessary to calculate their three straight line equations. Here is how it is done:
+
 ![alt text](Equations/3.png)
+
 Where m is the slope of the line, b is the value of x when y is equals to 0, and the third equation is the way to calculate the straight line equation.
 
 ## Implementation
