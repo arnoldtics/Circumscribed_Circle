@@ -71,7 +71,7 @@ Where h is the equivalent of x and k is the equivalent of y for the coordinates 
 
 Finally, it is necessary to calculate the value of the radius of the circumscribed circle. Using the Euclidean norm it is possible to calculate the value of the radius of the circumscribed circle.
 
-![alt text](Equations/1.png)
+![alt text](Equations/2.png)
 
 The two points used in this equation are the circumcenter and one of the corners of the triangle.
 
