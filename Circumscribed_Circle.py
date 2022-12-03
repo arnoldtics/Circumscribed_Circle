@@ -14,7 +14,7 @@ def createPoints():
             pass
         elif p1[0] == p2[0] and p2[0] == p3[0]:
             pass
-        elif p1[1] == p2[1] and p2[1] == p3[1]:
+        elif p1[1] == p2[1] or p1[1] == p3[1] or p2[1] == p3[1]:
             pass
         elif (p2[1]-p1[1])/(p2[0]-p1[0]) == (p3[1]-p2[1])/(p3[0]-p2[0]):
             pass
