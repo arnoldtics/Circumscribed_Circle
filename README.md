@@ -40,6 +40,13 @@ The description of each step is:
 5. Calculate the distance between the circumcenter and the corners of the triangle.
 6. Create a circle with radius of the calculated distance (step 5) and center at the circumcenter.
 
+### Equations
+Before the implementation, it is necessary to mention which equations are used in each step of the algorithm.
+
+First of all, each point will be described as (x, y). So, after having the three valid points, it is necessary to calculate their three straight line equations. Here is how it is done:
+![alt text](Equations/3.png)
+Where m is the slope of the line, b is the value of x when y is equals to 0, and the third equation is the way to calculate the straight line equation.
+
 ## Implementation
 In this section it is shown how do all the functions work. The order is the same as the order of the metodology section.
 
