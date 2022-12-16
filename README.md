@@ -7,7 +7,7 @@ A program that given 3 random points on R2, validates them, graphs their lines a
 Arnoldo Fernando Chue Sánchez
 
 ## Contact:
-arfersan20@gmail.com
+arnoldwork20@gmail.com
 
 ## License:
 GNU General Public License v3.0

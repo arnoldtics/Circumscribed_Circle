@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #Author: Arnoldo Fernando Chue Sánchez
-#Contact: arfersan20@gmail.com
+#Contact: arnoldwork20@gmail.com
 #License: GNU/GPL 
 
 import numpy as np
@@ -66,7 +66,7 @@ if __name__ == "__main__":
     circle = createCircle(euclideanNorm(p1, circuncenter), circuncenter)
     xCircle, yCircle = circle[0], circle[1]
 
-    fig, ax = plt.subplots(figsize=(20,20))
+    fig, ax = plt.subplots(figsize=(8,8))
     ax.axis([-200, 200, -200, 200])
     ax.plot(x, line1, color="blue")
     ax.plot(x, line2, color="red")
